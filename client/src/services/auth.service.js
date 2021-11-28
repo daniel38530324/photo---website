@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api/contact";
+const API_URL = "https://photo---website.herokuapp.com/api/contact";
 
 class AuthService {
   contact(name, email, phone, need) {
