@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import AuthService from "../services/auth.service";
+import P1 from "../icons/facebook.svg";
+import P2 from "../icons/instagram.svg";
 
 const About = () => {
   const history = useHistory();
@@ -100,23 +102,15 @@ const About = () => {
         </section>
       </section>
 
-      {/* <footer>
+      <footer>
         <a href="https://www.facebook.com/profile.php?id=100004662224032">
-          <img
-            src="../icons/facebook.svg"
-            alt="facebook"
-            title="facebook page"
-          />
+          <img src={P1} alt="facebook" title="facebook page" />
         </a>
 
         <a href="https://www.instagram.com/daniel38530324/">
-          <img
-            src="../icons/instagram.svg"
-            alt="instagram"
-            title="instagram page"
-          />
+          <img src={P2} alt="instagram" title="instagram page" />
         </a>
-      </footer> */}
+      </footer>
     </div>
   );
 };
